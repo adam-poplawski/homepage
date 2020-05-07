@@ -1,0 +1,17 @@
+body{
+    background:#1ab7e7;
+}
+h2{
+    color:#1460AA;
+}
+
+.first-header, footer{
+    color: black;
+    background: red;
+    text-align: center;
+    padding: 5px;
+}
+
+a {
+    color:red;
+}
