@@ -5,6 +5,11 @@ h2{
     color:#1460AA;
 }
 
+.main-header, .main-content, .footer-style{
+width:1000px;
+margin:auto;
+}
+
 .first-header, footer{
     color: black;
     background: red;
