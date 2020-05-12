@@ -9,23 +9,29 @@
 
   <body>
     <header class="main-header">
-      <nav>
-        <a href="index.html">Strona główna</a>
-        <a href="nauka-html.html">HTML</a>
-        <a href="nauka-css.html">CSS</a>
-        <a href="nauka-js.html">Java-Script</a>
+      <nav class="navigation">
+        <a class="navigation__link" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="nauka-html.html">HTML</a>
+        <a class="navigation__link" href="nauka-css.html">CSS</a>
+        <a class="navigation__link" href="nauka-js.html">Java-Script</a>
       </nav>
     </header>
 
-    <main class="main-content">
-      <header>
-        <h1 class="first-header">Z pamiętnika frontendowca</h1>
+    <main class="main">
+      <header class="main__header">
+        <h1 class="main__heading">Z pamiętnika frontendowca</h1>
       </header>
-      <section>
-        <h2>NAUKA CSS</h2>
-        <img src="images/logo-css.png" alt="logo CSS-a" width="150" />
 
-        <p>Nauczyliśmy się tworzyć:</p>
+      <section class="about">
+        <h2 class="about__heading">NAUKA CSS</h2>
+        <img
+          class="about__picture"
+          src="images/logo-css.png"
+          alt="logo CSS-a"
+          width="150"
+        />
+
+        <p class="about__description">Nauczyliśmy się tworzyć:</p>
         <ul>
           <li>selektory elementów</li>
           <li>klasy (class)</li>
@@ -33,7 +39,7 @@
         </ul>
       </section>
     </main>
-    <footer class="footer-style">
+    <footer class="footer">
       &copy; Adam Popławski 2020
     </footer>
   </body>

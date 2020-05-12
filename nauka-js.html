@@ -9,27 +9,33 @@
 
   <body>
     <header class="main-header">
-      <nav>
-        <a href="index.html">Strona główna</a>
-        <a href="nauka-html.html">HTML</a>
-        <a href="nauka-css.html">CSS</a>
-        <a href="nauka-js.html">Java-Script</a>
+      <nav class="navigation">
+        <a class="navigation__link" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="nauka-html.html">HTML</a>
+        <a class="navigation__link" href="nauka-css.html">CSS</a>
+        <a class="navigation__link" href="nauka-js.html">Java-Script</a>
       </nav>
     </header>
 
-    <main class="main-content">
-      <header>
-        <h1 class="first-header">Z pamiętnika frontendowca</h1>
+    <main class="main">
+      <header class="main__header">
+        <h1 class="main__heading">Z pamiętnika frontendowca</h1>
       </header>
-      <section>
-        <h2>NAUKA JAVASCRIPTU</h2>
 
-        <img src="images/logo-js.png" alt="logo JavaScript-u" width="150" />
+      <section class="about">
+        <h2 class="about__heading">NAUKA JAVASCRIPTU</h2>
 
-        <p>To trudne, ale na razie do ogarnięcia.</p>
+        <img
+          class="about__picture"
+          src="images/logo-js.png"
+          alt="logo JavaScript-u"
+          width="150"
+        />
+
+        <p class="about__description">To trudne, ale na razie do ogarnięcia.</p>
       </section>
     </main>
-    <footer class="footer-style">
+    <footer class="footer">
       &copy; Adam Popławski 2020
     </footer>
   </body>

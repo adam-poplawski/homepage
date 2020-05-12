@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
+  <body>
     <header class="main-header">
-        <nav>
-            <a href="index.html">Strona główna</a>
-            <a href="nauka-html.html">HTML</a>
-            <a href="nauka-css.html">CSS</a>
-            <a href="nauka-js.html">Java-Script</a>
-        </nav>
+      <nav class="navigation">
+        <a class="navigation__link" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="nauka-html.html">HTML</a>
+        <a class="navigation__link" href="nauka-css.html">CSS</a>
+        <a class="navigation__link" href="nauka-js.html">Java-Script</a>
+      </nav>
     </header>
 
-    <main class="main-content">
-<header>
-    <h1 class="first-header">Z pamiętnika frontendowca</h1>
-</header>
-        <section>
-            <h2>NAUKA HTML</h2>
+    <main class="main">
+      <header class="main__header">
+        <h1 class="main__heading">Z pamiętnika frontendowca</h1>
+      </header>
 
-            <img src="images/logo-html.png" alt="logo HTML-a" width="150">
+      <section class="about">
+        <h2 class="about__heading">NAUKA HTML</h2>
 
-            <p>Poznaliśmy znaczniki</p>
-            <ul>
-                <li>br</li>
-                <li>b, strong</li>
-                <li>i, em</li>
-            </ul>
-        </section>
+        <img
+          class="about__picture"
+          src="images/logo-html.png"
+          alt="logo HTML-a"
+          width="150"
+        />
 
+        <p class="about__description">Poznaliśmy znaczniki</p>
+        <ul>
+          <li>br</li>
+          <li>b, strong</li>
+          <li>i, em</li>
+        </ul>
+      </section>
     </main>
-    <footer class="footer-style">
-        &copy; Adam Popławski 2020
+    <footer class="footer">
+      &copy; Adam Popławski 2020
     </footer>
-</body>
-
+  </body>
 </html>

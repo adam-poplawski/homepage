@@ -1,22 +1,79 @@
-body{
-    background:#1ab7e7;
-}
-h2{
-    color:#1460AA;
+body {
+  background: #1ab7e7;
 }
 
-.main-header, .main-content, .footer-style{
-width:1000px;
-margin:auto;
+h2 {
+  color: #1460aa;
 }
 
-.first-header, footer{
-    color: black;
-    background: red;
-    text-align: center;
-    padding: 5px;
+.main-header{
+
+}
+
+.navigation{
+
+}
+
+.navigation__link{
+
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.main{
+
+}
+
+.main__header{
+
+}
+
+.main__heading{
+
+}
+
+.about{
+
+}
+
+.about__heading{
+
+}
+
+.about__picture{
+
+}
+
+.about__description{
+
+}
+
+.week-summary{
+
+}
+
+.week-summary__heading{
+
+}
+
+.article{
+
+}
+
+.article__heading{
+
+}
+
+footer {
+  color: black;
+  background: red;
+  text-align: center;
+  padding: 5px;
 }
 
 a {
-    color:red;
+  color: red;
 }
