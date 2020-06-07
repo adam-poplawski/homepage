@@ -14,3 +14,9 @@ function hello (secondName, age) {
 
 const secondName='Marcin';
 hello (secondName, age);
+
+const hamburger = document.querySelector('.hamburger--js')
+hamburger.addEventListener('click', () => {
+    const nav = document.querySelector('.navigation--js');
+    nav.classList.toggle('navigation--open')
+})
