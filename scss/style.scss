@@ -1,0 +1,152 @@
+body {
+  background: pink;
+  @media screen and (min-width: 321px) {
+    background-color: #fa8bff;
+    background-image: linear-gradient(
+      45deg,
+      #fa8bff 0%,
+      #2bd2ff 52%,
+      #2bff88 90%
+    );
+  }
+}
+
+h2 {
+  color: #1460aa;
+}
+
+.header {
+  min-height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: white;
+  @media screen and (min-width: 321px) {
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    background: none;
+}
+}
+
+.navigation {
+  padding: 16px;
+  display: none;
+  &--open {
+    display: block;
+  }
+  &__link {
+    color: black;
+    display: block;
+    margin: 0 0 16px;
+    text-decoration: none;
+  }
+  @media screen and (min-width: 321px){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background: #478a05;
+    padding: 16px;
+    border-radius: 8px;
+  }
+}
+
+.hamburger {
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  @media screen and (min-width: 321px){
+      display:none;
+  }
+}
+
+.main {
+  max-width: 1000px;
+  margin: 60px;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "section . aside"
+    "footer footer footer";
+  grid-template-columns: 1fr 60px 100px;
+  column-gap: 16px;
+  row-gap: 16px;
+  &__header {
+    grid-area: header;
+    min-height: 60px;
+  }
+  &__heading {
+  }
+}
+
+.about {
+  &__heading {
+  }
+  &__picture {
+    display: block;
+    max-width: 100%;
+  }
+  &__description {
+  }
+}
+
+.week-summary {
+  &__heading {
+  }
+  &::before {
+    content: url(images/szlaczek.png);
+    display: block;
+    margin-top: 64px;
+  }
+}
+
+.article {
+  &__heading {
+  }
+}
+
+footer {
+  grid-area: footer;
+  color: black;
+  background: red;
+  text-align: center;
+  padding: 5px;
+}
+
+a {
+  color: red;
+}
+
+.sections {
+  grid-area: section;
+}
+
+.aside {
+  grid-area: aside;
+  display: none;
+  @media screen and (min-width: 321px){
+  display:grid;
+  }
+}
+
+@media screen and (min-width: 321px) {
+
+  .form {
+    width: 600px;
+  &__item {
+    display: block;
+    width: 100%;
+  }
+}
+
+  .form label {
+    display: block;
+  }
+
+  .form textarea {
+    width: 100%;
+    min-height: 200px;
+  }
+
+}

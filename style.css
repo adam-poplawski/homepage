@@ -1,175 +1,103 @@
 body {
-  background: red;
-}
+  background: pink; }
+  @media screen and (min-width: 321px) {
+    body {
+      background-color: #fa8bff;
+      background-image: linear-gradient(45deg, #fa8bff 0%, #2bd2ff 52%, #2bff88 90%); } }
 
 h2 {
-  color: #1460aa;
-}
-
-.main-header {
-}
-
-.navigation {
-padding:16px;
-display: none;
-}
-
-.navigation--open {
-  display:block;
-}
-
-.navigation__link {
-  color:black;
-  display:block;
-  margin: 0 0 16px;
-  text-decoration: none;
-}
+  color: #1460aa; }
 
 .header {
   min-height: 60px;
-  width:100%;
-  position: fixed ;
+  width: 100%;
+  position: fixed;
   top: 0;
-  background:white;
-}
+  background: white; }
+  @media screen and (min-width: 321px) {
+    .header {
+      max-width: 1000px;
+      margin: auto;
+      position: relative;
+      background: none; } }
 
-main {
-  max-width: 1000px;
-  margin: auto;
-  display: grid;
-  grid-template-areas: "header header header"
-  "section . aside"
-  "footer footer footer";
-  grid-template-columns: 1fr 60px 100px;
-  column-gap: 16px;
-  row-gap: 16px;
-  }
+.navigation {
+  padding: 16px;
+  display: none; }
+  .navigation--open {
+    display: block; }
+  .navigation__link {
+    color: black;
+    display: block;
+    margin: 0 0 16px;
+    text-decoration: none; }
+  @media screen and (min-width: 321px) {
+    .navigation {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: white;
+      background: #478a05;
+      padding: 16px;
+      border-radius: 8px; } }
 
-.main__header {
-  grid-area:header;
-  min-height: 60px;
-}
+.hamburger {
+  position: absolute;
+  top: 20px;
+  right: 16px; }
+  @media screen and (min-width: 321px) {
+    .hamburger {
+      display: none; } }
 
 .main {
-  max-width:1000px;
-  margin: 60px auto 0;
-}
-
-.main__header {
-}
-
-.main__heading {
-}
-
-.about {
-}
-
-.about__heading {
-}
+  max-width: 1000px;
+  margin: 60px;
+  display: grid;
+  grid-template-areas: "header header header" "section . aside" "footer footer footer";
+  grid-template-columns: 1fr 60px 100px;
+  column-gap: 16px;
+  row-gap: 16px; }
+  .main__header {
+    grid-area: header;
+    min-height: 60px; }
 
 .about__picture {
-  display:block;
-  max-width:100%;
-}
+  display: block;
+  max-width: 100%; }
 
-.about__description {
-}
-
-.week-summary {
-
-}
-
-.week-summary__heading {
-}
-
-.week-summary__heading::before {
-  content:url(images/szlaczek.png);
-  display:block;
-  margin-top:64px;
-}
-
-.article {
-}
-
-.article__heading {
-}
+.week-summary::before {
+  content: url(images/szlaczek.png);
+  display: block;
+  margin-top: 64px; }
 
 footer {
   grid-area: footer;
   color: black;
   background: red;
   text-align: center;
-  padding: 5px;
-}
+  padding: 5px; }
 
 a {
-  color: red;
-}
+  color: red; }
 
 .sections {
-  grid-area: section;
-}
+  grid-area: section; }
 
-.aside{
-  grid-area:aside;
-  display:none;
-}
+.aside {
+  grid-area: aside;
+  display: none; }
+  @media screen and (min-width: 321px) {
+    .aside {
+      display: grid; } }
 
-.hamburger {
-  position: absolute;
-  top: 20px;
-  right: 16px;
-}
-
-@media screen and (min-width:321px) {
-body {
-  background-color: #fa8bff;
-  background-image: linear-gradient(
-    45deg,
-    #fa8bff 0%,
-    #2bd2ff 52%,
-    #2bff88 90%
-  );
-}
-
-.form {
-  width:600px;
-}
-
-.form__item {
-  display:block;
-  width:100%;
-}
-
-.form label {
-  display:block;
-}
-
-.form textarea {
-  width:100%;
-  min-height:200px;
-}
-
-.header {
-  max-width: 1000px;
-  margin: auto;
-  position: relative;
-  background: none;
-}
-.navigation {
-  display: flex;
-  justify-content: space-around;
-  align-items:center;
-  color: white;
-  background:#478a05;
-  padding:16px; 
-  border-radius:8px;
-}
-
-.aside{
-  display:grid;
-}
-
-.hamburger{
-  display:none;
-}
+@media screen and (min-width: 321px) {
+  .form {
+    width: 600px; }
+    .form__item {
+      display: block;
+      width: 100%; }
+  .form label {
+    display: block; }
+  .form textarea {
+    width: 100%;
+    min-height: 200px; } }
