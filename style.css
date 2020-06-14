@@ -82,6 +82,12 @@ main {
 .week-summary__heading {
 }
 
+.week-summary__heading::before {
+  content:url(images/szlaczek.png);
+  display:block;
+  margin-top:64px;
+}
+
 .article {
 }
 
@@ -124,6 +130,24 @@ body {
     #2bd2ff 52%,
     #2bff88 90%
   );
+}
+
+.form {
+  width:600px;
+}
+
+.form__item {
+  display:block;
+  width:100%;
+}
+
+.form label {
+  display:block;
+}
+
+.form textarea {
+  width:100%;
+  min-height:200px;
 }
 
 .header {

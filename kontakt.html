@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navigation navigation--js">
+            <a class="navigation__link" href="index.html">Strona główna</a>
+            <a class="navigation__link" href="nauka-html.html">HTML</a>
+            <a class="navigation__link" href="nauka-css.html">CSS</a>
+            <a class="navigation__link" href="nauka-js.html">Java-Script</a>
+            <a class="navigation__link" href="kontakt.html">Kontakt</a>
+        </nav>
+        <button class="hamburger hamburger--js">🍔</button>
+    </header>
+
+    <main class="main">
+        <header class="main__header">
+            <h1 class="main__heading main_heading--js">Zostaw po sobie ślad</h1>
+        </header>
+
+        <section class="form">
+            <h2 class="about__heading">Wypełnij formularz</h2>
+
+            <form class="form" action="http://dev.cotenfrontend.pl" method="post">
+                <p>
+                    <label>Imię</label>
+                    <input class="form__item" type="text" placeholder="Wpisz swoje imię" id="firstName"
+                        name="firstName" required></input></label>
+                </p>
+                <p>
+                    <label>Nazwisko
+                    <input class="form__item" type="text" placeholder="Wpisz swoje nazwisko" id="lastName"
+                        name="lastName" required></input></label>
+                </p>
+                <p>
+                    <label>Wiek
+                    <input class="form__item" type="number" placeholder="Wpisz wiek" id="age"
+                        name="age" required></input></label>
+                </p>
+                <p>
+                    <label for="sex">Płeć</label>
+                    <select>
+                        <option value="M">Mężczyzna</option>
+                        <option value="K">Kobieta</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Telefon
+                    <input class="form__item" type="tel" placeholder="Wpisz numer telefonu" id="phone"
+                        name="phone" required></input></label>
+                </p>
+                <p>
+                    <label>E-mail
+                    <input class="form__item" type="email" placeholder="Wpisz adres mailowy" id="mail"
+                        name="mail"></input></label>
+                </p>
+                <p>
+                    <label>Hasło
+                    <input class="form__item" type="password" placeholder="Wpisz hasło" id="password"
+                    name="password"></input></label>
+                </p>
+                <p>
+                    <label>Wgraj awatar
+                    <input class="form__item" type="file" id="awatar"
+                    name="awatar"></input></label>
+                </p>
+                <fieldset>
+                    <legend>Adres</legend>
+                    <p>
+                        <label>Ulica
+                        <input class="form__item" type="streetName" placeholder="Ulica" id="streetName"
+                            name="streetName"></input></label>
+                    </p>
+                    <p>
+                        <label>Miasto
+                        <input class="form__item" type="city" placeholder="Miasto" id="city"
+                            name="city"></input></label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Ulubiony język programowania</legend>
+                    <p>
+                        <label><input name="language" type="radio" value="HTML">HTML</label>
+                    </p>
+                    <p>
+                        <label><input name="language" type="radio" value="CSS">CSS</label>
+                    </p>
+                    <p>
+                        <label><input name="language" type="radio" value="JS">JavaScript</label>
+                    </p>
+                </fieldset>
+                <p>
+                    <label><input name="agreement" type="checkbox" value="agree">Potwierdzam poprawność danych</label>
+                </p>
+               
+                <p>
+                    <label for="opinion">Podziel się swoimi uwagami</label>
+                    <textarea id="opinion" name="opinion"></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Wyślij formularz"></input>
+                </p>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        &copy; Adam Popławski 2020
+    </footer>
+</body>
+
+</html>
