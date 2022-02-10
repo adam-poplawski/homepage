@@ -20,6 +20,6 @@
   "homepage": "https://github.com/adam-poplawski/homepage#readme",
   "dependencies": {
     "cowsay": "^1.4.0",
-    "node-sass": "^4.14.1"
+    "node-sass": "^7.0.0"
   }
 }
